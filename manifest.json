@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Hidden Unicode Scanner · 隐藏字符扫描器",
+  "version": "1.0.0",
+  "description": "检测并清理文本中的零宽字符和同形字(homoglyph)，识别 AI 文本水印与钓鱼域名。",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "扫描隐藏 Unicode 字符"
+  },
+  "permissions": ["clipboardWrite"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

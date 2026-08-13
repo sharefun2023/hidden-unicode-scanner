@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>隐藏字符扫描器</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>隐藏字符扫描器</h1>
+    <p class="sub">检测零宽字符 · 同形字 · AI 水印 · 钓鱼域名</p>
+  </header>
+
+  <textarea id="input" placeholder="把可疑文本粘贴到这里…&#10;例如：аррle.com（注意里面的 р 不是 p）"></textarea>
+
+  <div class="actions">
+    <button id="scan" class="primary">扫描</button>
+    <button id="clean-copy">清理并复制</button>
+    <button id="clear" class="ghost">清空</button>
+  </div>
+
+  <section id="summary" class="hidden"></section>
+
+  <section id="result" class="hidden">
+    <div class="result-head">高亮预览（可疑字符红底标出）</div>
+    <div id="preview"></div>
+    <div class="result-head">可疑字符明细</div>
+    <ul id="details"></ul>
+  </section>
+
+  <footer>
+    <span id="status"></span>
+  </footer>
+
+  <script src="lib/char-tables.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
